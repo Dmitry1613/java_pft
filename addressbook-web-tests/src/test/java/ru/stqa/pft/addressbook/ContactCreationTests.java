@@ -1,7 +1,6 @@
 package ru.stqa.pft.addressbook;
 
 import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -26,9 +25,9 @@ public class ContactCreationTests {
   }
 
   @Test
-  public void testContactCreationTests() throws Exception {
+  public void testContactCreation() throws Exception {
     initAddNewContact();
-    fillContactForm(new ContactData("Petr", "Petrov", "Litva", "123123123", "147147147", "159159159", "test22@gmail.com"));
+    fillContactForm(new ContactData("Victor", "Petrov", "Litva", "123123123", "147147147", "159159159", "test22@gmail.com"));
     submitContactCreation();
     goToHomePage();
   }
